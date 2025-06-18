@@ -169,3 +169,24 @@
 ### 보전생물학 일반
 - [Wildlife Corridors and Habitat Connectivity](https://www.defenders.org/wildlife-corridors-and-habitat-connectivity) - Defenders of Wildlife
 - [Leopard Cat Conservation](https://wildcatconservation.org/wild-cats/asia/leopard-cat/) - International Society for Endangered Cats
+
+---
+
+> ⚠️ **저작권 및 사용 안내 (Copyright & Use Notice)**  
+> 본 리포지토리의 모든 콘텐츠는 연구 및 학술적 공유를 목적으로 작성되었습니다.  
+> 학술적 인용은 허용되나, **영리적 목적의 사용·복제·재배포는 금지**됩니다.  
+> 무단 도용, 자동화된 크롤링 및 2차 가공을 통한 상업적 이용은 법적 책임의 대상이 될 수 있습니다.  
+
+> All content in this repository is provided for academic and non-commercial purposes only.  
+> Commercial use, redistribution, or reproduction without prior written permission is strictly prohibited.  
+> Unauthorized use may result in legal liability.
+
+📌 본 보고서는 최선을 다해 정확한 정보를 담고 있으나,  
+현장 여건 또는 데이터 오류 가능성을 포함하고 있기에  
+**이 자료에 기반한 판단 또는 조치에 대한 법적 책임은 지지 않습니다.**
+
+> While every effort has been made to ensure accuracy,  
+> some data may be incomplete, outdated, or subject to interpretation.  
+> The author accepts no responsibility for decisions made based on this report.
+
+© 2025 Dokyung Kim. All rights reserved.
