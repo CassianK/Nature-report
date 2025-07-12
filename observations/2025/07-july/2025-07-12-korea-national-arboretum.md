@@ -1,5 +1,15 @@
 # 관찰 기록 - 2025.07.12 국립수목원
 
+## 📹 관찰 영상
+
+[![암끝검은표범나비 흡밀 장면]([https://img.youtube.com/vi/your-video-id/maxresdefault.jpg)](https://youtube.com/watch?v=your-video-id](https://youtube.com/shorts/asI-UK9Gmjc?feature=share))
+
+*클릭하면 유튜브에서 전체 영상을 볼 수 있습니다.*
+
+## 📸 사진 및 영상 자료
+- [📹 관찰 영상 - 유튜브](https://youtube.com/watch?v=your-video-id)
+- [📱 원본 영상 파일](../../../videos/butterflies/argyreus-hyperbius-2025-07-12.mp4) *(업로드 예정)*
+
 ## 📅 기본 정보
 - **날짜**: 2025년 7월 12일 (금요일)
 - **시간**: 10:05 AM ~ 12:00 PM
