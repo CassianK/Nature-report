@@ -2,7 +2,7 @@
 
 ## 📹 관찰 영상
 
-[![암끝검은표범나비 흡밀 장면]([https://img.youtube.com/vi/your-video-id/maxresdefault.jpg)](https://youtube.com/watch?v=your-video-id](https://youtube.com/shorts/asI-UK9Gmjc?feature=share))
+[![암끝검은표범나비와 교감 장면]([https://img.youtube.com/vi/your-video-id/maxresdefault.jpg)](https://youtube.com/watch?v=your-video-id](https://youtube.com/shorts/asI-UK9Gmjc?feature=share](https://youtube.com/shorts/asI-UK9Gmjc)])
 
 *클릭하면 유튜브에서 전체 영상을 볼 수 있습니다.*
 
