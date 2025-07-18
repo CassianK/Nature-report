@@ -1,6 +1,6 @@
 # 왜가리과 (Ardeidae) 가이드
 
-![왜가리류 관찰 모습](../../../images/birds/ardeidae-jungnang-creek.jpg)
+![왜가리류 영상](https://youtube.com/shorts/AIkFiOy0PGw?feature=share))
 
 ## 기본 정보
 - **과명**: 왜가리과 (Ardeidae)
