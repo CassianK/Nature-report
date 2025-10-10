@@ -12,7 +12,7 @@ function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <Router>
+    <Router basename="/Nature-report">
       <div className="min-h-screen bg-white">
         {/* Navigation */}
         <nav className="nav-minimal fixed top-0 left-0 right-0 z-50">
