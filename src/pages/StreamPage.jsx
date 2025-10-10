@@ -56,23 +56,31 @@ export default function StreamPage() {
           <h2 className="section-title mb-16">Observations</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {streamVideos.map(video => (
-              <div key={video.id} className="bg-white overflow-hidden scale-on-hover">
+              <a 
+                key={video.id}
+                href={video.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white overflow-hidden scale-on-hover block"
+              >
                 <div className="card-image-container">
-                  <div className="card-image-fill bg-gradient-to-br from-blue-800 to-cyan-800 flex items-center justify-center text-white text-6xl">
-                    {video.species[0]?.includes('백로') ? '🦢' :
-                     video.species[0]?.includes('가마우지') ? '🦆' :
-                     video.species[0]?.includes('너구리') ? '🦝' :
-                     video.species[0]?.includes('개구리') ? '🐸' : '🌊'}
-                  </div>
+                  <img 
+                    src={streamImg} 
+                    alt={video.title} 
+                    className="card-image-fill"
+                  />
                 </div>
                 <div className="p-8">
                   <div className="category-badge mb-4">{video.location}</div>
                   <h3 className="text-2xl font-bold mb-4" style={{fontFamily: 'var(--font-serif)'}}>
                     {video.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">{video.description}</p>
+                  <p className="text-gray-600 leading-relaxed mb-4">{video.description}</p>
+                  <div className="text-sm font-bold uppercase tracking-wider text-gray-500">
+                    Watch on YouTube →
+                  </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

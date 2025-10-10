@@ -1,6 +1,8 @@
 import { ArrowRight, Play } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import mountainHero from '../assets/mountain-hero.jpg'
+import streamImg from '../assets/stream.jpg'
+import geeseImg from '../assets/geese.jpg'
 import videosData from '../data/videos.json'
 
 export default function HomePage() {
@@ -63,25 +65,30 @@ export default function HomePage() {
         <div className="max-w-[1800px] mx-auto px-6 lg:px-12">
           <h2 className="section-title text-center mb-16">Featured Stories</h2>
           <div className="grid md:grid-cols-3 gap-0">
-            {featured.map((video, index) => (
-              <Link 
-                key={video.id}
-                to={`/${video.category}`}
-                className="card-hover relative group"
-              >
-                <div className="card-image-container">
-                  <div className="card-image-fill bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center text-white text-6xl">
-                    {video.thumbnail === 'mountain' ? '⛰️' : 
-                     video.thumbnail === 'geese' ? '🦢' : '🌿'}
+            {featured.map((video, index) => {
+              const getImage = () => {
+                if (video.thumbnail === 'mountain') return mountainHero
+                if (video.thumbnail === 'geese') return geeseImg
+                return streamImg
+              }
+              
+              return (
+                <Link 
+                  key={video.id}
+                  to={`/${video.category}`}
+                  className="card-hover relative group"
+                >
+                  <div className="card-image-container">
+                    <img src={getImage()} alt={video.title} className="card-image-fill" />
+                    <div className="card-overlay-gradient">
+                      <div className="category-badge">{video.category}</div>
+                      <h3 className="card-title mb-3">{video.title}</h3>
+                      <p className="text-sm opacity-90 leading-relaxed">{video.description}</p>
+                    </div>
                   </div>
-                  <div className="card-overlay-gradient">
-                    <div className="category-badge">{video.category}</div>
-                    <h3 className="card-title mb-3">{video.title}</h3>
-                    <p className="text-sm opacity-90 leading-relaxed">{video.description}</p>
-                  </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              )
+            })}
           </div>
         </div>
       </section>

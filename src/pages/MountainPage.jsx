@@ -62,23 +62,31 @@ export default function MountainPage() {
           <h2 className="section-title mb-16">Field Observations</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {mountainVideos.map(video => (
-              <div key={video.id} className="bg-white overflow-hidden scale-on-hover">
+              <a 
+                key={video.id} 
+                href={video.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white overflow-hidden scale-on-hover block"
+              >
                 <div className="card-image-container">
-                  <div className="card-image-fill bg-gradient-to-br from-green-800 to-emerald-800 flex items-center justify-center text-white text-6xl">
-                    {video.species[0]?.includes('고양이') ? '🐱' :
-                     video.species[0]?.includes('거미') ? '🕷️' :
-                     video.species[0]?.includes('개구리') ? '🐸' :
-                     video.species[0]?.includes('여치') ? '🦗' : '⛰️'}
-                  </div>
+                  <img 
+                    src={mountainImg} 
+                    alt={video.title} 
+                    className="card-image-fill"
+                  />
                 </div>
                 <div className="p-8">
                   <div className="category-badge mb-4">{video.location}</div>
                   <h3 className="text-2xl font-bold mb-4" style={{fontFamily: 'var(--font-serif)'}}>
                     {video.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">{video.description}</p>
+                  <p className="text-gray-600 leading-relaxed mb-4">{video.description}</p>
+                  <div className="text-sm font-bold uppercase tracking-wider text-gray-500">
+                    Watch on YouTube →
+                  </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
