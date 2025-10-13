@@ -1,4 +1,13 @@
 {
+  "playlists": {
+    "stream": "https://www.youtube.com/playlist?list=PL2C1hebSz5MH0V_zUuBnzNrdC3UljovoN",
+    "bukhansan": "https://www.youtube.com/playlist?list=PLAYLIST_ID_HERE",
+    "dobongsan": "https://www.youtube.com/playlist?list=PLAYLIST_ID_HERE",
+    "unaksan": "https://www.youtube.com/playlist?list=PLAYLIST_ID_HERE",
+    "soyosan": "https://www.youtube.com/playlist?list=PLAYLIST_ID_HERE",
+    "myeongseongsan": "https://www.youtube.com/playlist?list=PLAYLIST_ID_HERE",
+    "nature": "https://www.youtube.com/playlist?list=PLAYLIST_ID_HERE"
+  },
   "videos": [
     {
       "id": "video001",
@@ -9,7 +18,10 @@
       "species": ["Intermediate Egret"],
       "views": 15234,
       "url": "https://youtube.com/shorts/AIkFiOy0PGw",
-      "thumbnail": "geese"
+      "playlistUrl": "https://www.youtube.com/playlist?list=PL2C1hebSz5MH0V_zUuBnzNrdC3UljovoN",
+      "thumbnail": "geese",
+      "coverImage": "/images/cards/stream-card-01.jpg",
+      "reportUrl": "/reports/jungnangcheon-2025-07-17-herons.pdf"
     },
     {
       "id": "video002",
@@ -19,7 +31,9 @@
       "location": "Jungnangcheon Stream",
       "species": ["Waterfowl"],
       "views": 8932,
-      "url": "https://youtube.com/shorts/example2"
+      "url": "https://youtube.com/shorts/example2",
+      "playlistUrl": "https://www.youtube.com/playlist?list=PL2C1hebSz5MH0V_zUuBnzNrdC3UljovoN",
+      "coverImage": "/images/cards/stream-card-02.jpg"
     },
     {
       "id": "video003",
@@ -29,7 +43,9 @@
       "location": "Jungnangcheon Stream",
       "species": ["Great Cormorant"],
       "views": 12456,
-      "url": "https://youtube.com/shorts/example3"
+      "url": "https://youtube.com/shorts/example3",
+      "playlistUrl": "https://www.youtube.com/playlist?list=PL2C1hebSz5MH0V_zUuBnzNrdC3UljovoN",
+      "coverImage": "/images/cards/stream-card-03.jpg"
     },
     {
       "id": "video004",
@@ -39,7 +55,9 @@
       "location": "Jungnangcheon Stream",
       "species": ["Raccoon Dog"],
       "views": 23567,
-      "url": "https://youtube.com/shorts/example4"
+      "url": "https://youtube.com/shorts/example4",
+      "playlistUrl": "https://www.youtube.com/playlist?list=PL2C1hebSz5MH0V_zUuBnzNrdC3UljovoN",
+      "coverImage": "/images/cards/stream-card-04.jpg"
     },
     {
       "id": "video005",
@@ -49,7 +67,9 @@
       "location": "Jungnangcheon Stream",
       "species": ["Frog"],
       "views": 6789,
-      "url": "https://youtube.com/shorts/example5"
+      "url": "https://youtube.com/shorts/example5",
+      "playlistUrl": "https://www.youtube.com/playlist?list=PL2C1hebSz5MH0V_zUuBnzNrdC3UljovoN",
+      "coverImage": "/images/cards/stream-card-05.jpg"
     },
     {
       "id": "video006",
@@ -59,7 +79,9 @@
       "location": "Jungnangcheon Stream",
       "species": ["Common Moorhen"],
       "views": 5432,
-      "url": "https://youtube.com/shorts/example6"
+      "url": "https://youtube.com/shorts/example6",
+      "playlistUrl": "https://www.youtube.com/playlist?list=PL2C1hebSz5MH0V_zUuBnzNrdC3UljovoN",
+      "coverImage": "/images/cards/stream-card-06.jpg"
     },
     {
       "id": "video007",
@@ -69,7 +91,9 @@
       "location": "Jungnangcheon Stream",
       "species": ["Grey Heron"],
       "views": 11234,
-      "url": "https://youtube.com/shorts/example7"
+      "url": "https://youtube.com/shorts/example7",
+      "playlistUrl": "https://www.youtube.com/playlist?list=PL2C1hebSz5MH0V_zUuBnzNrdC3UljovoN",
+      "coverImage": "/images/cards/stream-card-07.jpg"
     },
     {
       "id": "video008",
@@ -79,7 +103,9 @@
       "location": "Jungnangcheon Stream",
       "species": ["Snake"],
       "views": 9876,
-      "url": "https://youtube.com/shorts/example8"
+      "url": "https://youtube.com/shorts/example8",
+      "playlistUrl": "https://www.youtube.com/playlist?list=PL2C1hebSz5MH0V_zUuBnzNrdC3UljovoN",
+      "coverImage": "/images/cards/stream-card-08.jpg"
     },
     {
       "id": "video009",
@@ -89,7 +115,8 @@
       "location": "Seoul Urban",
       "species": [],
       "views": 18765,
-      "url": "https://youtube.com/shorts/example9"
+      "url": "https://youtube.com/shorts/example9",
+      "coverImage": "/images/cards/urban-card-01.jpg"
     },
     {
       "id": "video010",
@@ -99,7 +126,8 @@
       "location": "Seoul Urban",
       "species": [],
       "views": 14532,
-      "url": "https://youtube.com/shorts/example10"
+      "url": "https://youtube.com/shorts/example10",
+      "coverImage": "/images/cards/urban-card-02.jpg"
     },
     {
       "id": "video011",
@@ -110,7 +138,9 @@
       "species": ["Cat"],
       "views": 21345,
       "url": "https://youtube.com/shorts/example11",
-      "thumbnail": "mountain"
+      "playlistUrl": "https://www.youtube.com/playlist?list=BUKHANSAN_PLAYLIST_ID",
+      "thumbnail": "mountain",
+      "coverImage": "/images/cards/mountain-card-01.jpg"
     },
     {
       "id": "video012",
@@ -120,7 +150,9 @@
       "location": "Bukhansan",
       "species": [],
       "views": 13456,
-      "url": "https://youtube.com/shorts/example12"
+      "url": "https://youtube.com/shorts/example12",
+      "playlistUrl": "https://www.youtube.com/playlist?list=BUKHANSAN_PLAYLIST_ID",
+      "coverImage": "/images/cards/mountain-card-02.jpg"
     },
     {
       "id": "video013",
@@ -130,7 +162,9 @@
       "location": "Bukhansan",
       "species": ["Spider"],
       "views": 7654,
-      "url": "https://youtube.com/shorts/example13"
+      "url": "https://youtube.com/shorts/example13",
+      "playlistUrl": "https://www.youtube.com/playlist?list=BUKHANSAN_PLAYLIST_ID",
+      "coverImage": "/images/cards/mountain-card-03.jpg"
     },
     {
       "id": "video014",
@@ -140,7 +174,9 @@
       "location": "Dobongsan",
       "species": [],
       "views": 16789,
-      "url": "https://youtube.com/shorts/example14"
+      "url": "https://youtube.com/shorts/example14",
+      "playlistUrl": "https://www.youtube.com/playlist?list=DOBONGSAN_PLAYLIST_ID",
+      "coverImage": "/images/cards/mountain-card-04.jpg"
     },
     {
       "id": "video015",
@@ -150,7 +186,9 @@
       "location": "Unaksan",
       "species": [],
       "views": 19234,
-      "url": "https://youtube.com/shorts/example15"
+      "url": "https://youtube.com/shorts/example15",
+      "playlistUrl": "https://www.youtube.com/playlist?list=UNAKSAN_PLAYLIST_ID",
+      "coverImage": "/images/cards/mountain-card-05.jpg"
     },
     {
       "id": "video016",
@@ -160,7 +198,10 @@
       "location": "Soyosan",
       "species": ["Birds"],
       "views": 11567,
-      "url": "https://youtube.com/shorts/example16"
+      "url": "https://youtube.com/shorts/example16",
+      "playlistUrl": "https://www.youtube.com/playlist?list=SOYOSAN_PLAYLIST_ID",
+      "coverImage": "/images/cards/mountain-card-06.jpg",
+      "reportUrl": "/reports/soyosan-2025-06-06-leopard-cat-habitat.pdf"
     },
     {
       "id": "video017",
@@ -170,7 +211,9 @@
       "location": "Soyosan",
       "species": ["Insects"],
       "views": 8901,
-      "url": "https://youtube.com/shorts/example17"
+      "url": "https://youtube.com/shorts/example17",
+      "playlistUrl": "https://www.youtube.com/playlist?list=SOYOSAN_PLAYLIST_ID",
+      "coverImage": "/images/cards/mountain-card-07.jpg"
     },
     {
       "id": "video018",
@@ -180,7 +223,9 @@
       "location": "Bukhansan",
       "species": ["Frog"],
       "views": 9345,
-      "url": "https://youtube.com/shorts/example18"
+      "url": "https://youtube.com/shorts/example18",
+      "playlistUrl": "https://www.youtube.com/playlist?list=BUKHANSAN_PLAYLIST_ID",
+      "coverImage": "/images/cards/mountain-card-08.jpg"
     },
     {
       "id": "video019",
@@ -190,7 +235,9 @@
       "location": "Dobongsan",
       "species": ["Katydid"],
       "views": 6234,
-      "url": "https://youtube.com/shorts/example19"
+      "url": "https://youtube.com/shorts/example19",
+      "playlistUrl": "https://www.youtube.com/playlist?list=DOBONGSAN_PLAYLIST_ID",
+      "coverImage": "/images/cards/mountain-card-09.jpg"
     },
     {
       "id": "video020",
@@ -200,7 +247,9 @@
       "location": "Unaksan",
       "species": ["Beetle"],
       "views": 5678,
-      "url": "https://youtube.com/shorts/example20"
+      "url": "https://youtube.com/shorts/example20",
+      "playlistUrl": "https://www.youtube.com/playlist?list=UNAKSAN_PLAYLIST_ID",
+      "coverImage": "/images/cards/mountain-card-10.jpg"
     }
   ]
 }

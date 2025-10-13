@@ -1,48 +1,62 @@
-import { Droplets } from 'lucide-react'
-import streamImg from '../assets/stream.jpg'
+import { Waves, Youtube } from 'lucide-react'
 import videosData from '../data/videos.json'
 
 export default function StreamPage() {
   const streamVideos = videosData.videos.filter(v => v.category === 'stream')
+  const playlistUrl = videosData.playlists.stream
 
   return (
     <div className="pt-20">
       <section className="hero-fullscreen">
-        <img src={streamImg} alt="Jungnangcheon Stream" className="hero-image" />
+        <img src="/images/hero/stream-hero.jpg" alt="Jungnangcheon Stream" className="hero-image" />
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <Droplets size={80} className="mb-6 opacity-90" />
+          <Waves size={80} className="mb-6 opacity-90" />
           <h1 className="hero-title text-shadow-heavy">
             JUNGNANGCHEON<br/>STREAM
           </h1>
           <p className="text-xl md:text-2xl font-light max-w-3xl mt-8 opacity-95">
-            An urban waterway ecosystem thriving with diverse birdlife and aquatic species
+            Urban waterway ecology in Nowon & Dobong districts
           </p>
+          {playlistUrl && (
+            <a 
+              href={playlistUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-3 px-8 py-4 bg-red-600 text-white font-bold text-sm uppercase tracking-wider hover:bg-red-700 transition-colors"
+            >
+              <Youtube size={24} />
+              View Full Playlist (44 videos)
+            </a>
+          )}
         </div>
       </section>
 
       <section className="py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <h2 className="section-title mb-16">Ecological Significance</h2>
-          <div className="grid md:grid-cols-2 gap-16">
-            <div>
-              <h3 className="text-3xl font-bold mb-6" style={{fontFamily: 'var(--font-serif)'}}>Avian Diversity</h3>
-              <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                The Jungnangcheon Stream serves as a critical habitat for various bird species, including herons, cormorants, and moorhens. 
-                The boundary between rapids and calm waters creates diverse micro-habitats where different species employ unique foraging strategies.
+          <h2 className="section-title mb-16">Urban Stream Ecology</h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="border-l-4 border-black pl-8">
+              <h3 className="text-4xl font-bold mb-4" style={{fontFamily: 'var(--font-serif)'}}>Avian Diversity</h3>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                Jungnangcheon supports a remarkable diversity of waterbirds despite its urban setting. 
+                Herons (Ardeidae), cormorants (Phalacrocoracidae), and waterfowl utilize the stream's 
+                varied microhabitats—from rapids to calm pools.
               </p>
-              <p className="text-lg leading-relaxed text-gray-700">
-                During monsoon season, increased organic matter influx temporarily enriches the ecosystem, 
-                attracting more birds downstream and expanding their feeding range.
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Monsoon periods trigger increased biological activity as elevated water levels and 
+                turbidity create enhanced foraging opportunities. Species exhibit distinct niche 
+                partitioning strategies to minimize competition.
               </p>
             </div>
-            <div>
-              <h3 className="text-3xl font-bold mb-6" style={{fontFamily: 'var(--font-serif)'}}>Urban Wildlife</h3>
-              <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                Despite its urban setting, the stream supports mammals like raccoon dogs and amphibians, 
-                demonstrating the ecological value of urban waterways.
+            <div className="border-l-4 border-black pl-8">
+              <h3 className="text-4xl font-bold mb-4" style={{fontFamily: 'var(--font-serif)'}}>Mammalian & Herpetofauna</h3>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                Raccoon dogs (Nyctereutes procyonoides) maintain populations along the riparian corridor, 
+                demonstrating adaptability to human-modified landscapes. Amphibians and reptiles, 
+                including various frog species and snakes, indicate ecological functionality.
               </p>
-              <p className="text-lg leading-relaxed text-gray-700">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 Riparian vegetation and stone crevices provide essential habitats, 
                 maintaining biodiversity even in heavily modified environments.
               </p>
@@ -65,7 +79,7 @@ export default function StreamPage() {
               >
                 <div className="card-image-container">
                   <img 
-                    src={streamImg} 
+                    src={video.coverImage || '/images/cards/default-card.jpg'}
                     alt={video.title} 
                     className="card-image-fill"
                   />
@@ -88,3 +102,4 @@ export default function StreamPage() {
     </div>
   )
 }
+

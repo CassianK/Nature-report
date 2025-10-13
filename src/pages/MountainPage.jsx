@@ -1,14 +1,21 @@
-import { Mountain } from 'lucide-react'
-import mountainImg from '../assets/mountain-hero.jpg'
+import { Mountain, Youtube } from 'lucide-react'
 import videosData from '../data/videos.json'
 
 export default function MountainPage() {
   const mountainVideos = videosData.videos.filter(v => v.category === 'mountain')
+  
+  // 산별 재생목록
+  const playlists = {
+    'Bukhansan': videosData.playlists.bukhansan,
+    'Dobongsan': videosData.playlists.dobongsan,
+    'Unaksan': videosData.playlists.unaksan,
+    'Soyosan': videosData.playlists.soyosan
+  }
 
   return (
     <div className="pt-20">
       <section className="hero-fullscreen">
-        <img src={mountainImg} alt="Korean Mountains" className="hero-image" />
+        <img src="/images/hero/mountain-hero.jpg" alt="Korean Mountains" className="hero-image" />
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <Mountain size={80} className="mb-6 opacity-90" />
@@ -31,6 +38,17 @@ export default function MountainPage() {
                 Seoul's iconic mountain hosting diverse wildlife and feral cats coexisting with native species. 
                 Historic temples like Jungheungsa add cultural significance to its ecological value.
               </p>
+              {playlists.Bukhansan && (
+                <a 
+                  href={playlists.Bukhansan}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-gray-700 hover:text-black transition-colors"
+                >
+                  <Youtube size={18} />
+                  View Bukhansan Playlist →
+                </a>
+              )}
             </div>
             <div className="border-l-4 border-black pl-8">
               <h3 className="text-4xl font-bold mb-4" style={{fontFamily: 'var(--font-serif)'}}>Dobongsan (740m)</h3>
@@ -38,6 +56,17 @@ export default function MountainPage() {
                 Famous for its dramatic rock formations including Jayunbong and Geobukbawi. 
                 A premier destination for both hiking and rock climbing.
               </p>
+              {playlists.Dobongsan && (
+                <a 
+                  href={playlists.Dobongsan}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-gray-700 hover:text-black transition-colors"
+                >
+                  <Youtube size={18} />
+                  View Dobongsan Playlist →
+                </a>
+              )}
             </div>
             <div className="border-l-4 border-black pl-8">
               <h3 className="text-4xl font-bold mb-4" style={{fontFamily: 'var(--font-serif)'}}>Unaksan (935m)</h3>
@@ -45,6 +74,17 @@ export default function MountainPage() {
                 Located in Gapyeong, renowned for its sacred Jeongmulbogung temple and spectacular cloud formations. 
                 Higher elevation supports diverse alpine ecosystems.
               </p>
+              {playlists.Unaksan && (
+                <a 
+                  href={playlists.Unaksan}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-gray-700 hover:text-black transition-colors"
+                >
+                  <Youtube size={18} />
+                  View Unaksan Playlist →
+                </a>
+              )}
             </div>
             <div className="border-l-4 border-yellow-500 pl-8 bg-yellow-50 p-6">
               <h3 className="text-4xl font-bold mb-4" style={{fontFamily: 'var(--font-serif)'}}>Soyosan (587m)</h3>
@@ -52,6 +92,17 @@ export default function MountainPage() {
                 <strong>Critical research site for the endangered leopard cat (Prionailurus bengalensis).</strong> 
                 Located 20km from the DMZ, this mountain represents a vital ecological corridor for endangered species conservation.
               </p>
+              {playlists.Soyosan && (
+                <a 
+                  href={playlists.Soyosan}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-gray-700 hover:text-black transition-colors"
+                >
+                  <Youtube size={18} />
+                  View Soyosan Playlist →
+                </a>
+              )}
             </div>
           </div>
         </div>
@@ -71,7 +122,7 @@ export default function MountainPage() {
               >
                 <div className="card-image-container">
                   <img 
-                    src={mountainImg} 
+                    src={video.coverImage || '/images/cards/default-card.jpg'}
                     alt={video.title} 
                     className="card-image-fill"
                   />
@@ -94,3 +145,4 @@ export default function MountainPage() {
     </div>
   )
 }
+
